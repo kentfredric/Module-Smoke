@@ -9,4 +9,5 @@ use Moose::Role;
 
 requires 'install';
 
+no Moose::Role;
 1;

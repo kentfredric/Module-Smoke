@@ -8,4 +8,6 @@ use Moose::Role;
 
 requires 'generate_environment';
 
+no Moose::Role;
+
 1;

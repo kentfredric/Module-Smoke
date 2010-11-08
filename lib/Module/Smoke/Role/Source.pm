@@ -8,4 +8,5 @@ use Moose::Role;
 
 requires 'root_dir';
 
+no Moose::Role;
 1;
