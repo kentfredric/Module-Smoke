@@ -9,8 +9,8 @@ use App::Cmd::Setup -command;
 use Module::Smoke;
 
 sub smoker {
-    my $self = shift;
-    return Module::Smoke->new( @_ );
+  my ( $self, @rest ) = @_;
+  return Module::Smoke->new(@rest);
 }
 
 1;

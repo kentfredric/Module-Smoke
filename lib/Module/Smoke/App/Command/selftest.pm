@@ -1,21 +1,24 @@
 use strict;
 use warnings;
 
+## no critic ( NamingConventions::Capitalization )
 package Module::Smoke::App::Command::selftest;
 
-# ABSTRACT: Conveninece self-test for me while developing'
+# ABSTRACT: Convenience self-test for me while developing'
 
 use Module::Smoke::App -command;
 
-sub abstract { 'Conveninece self-test for me while developing' }
-sub description  { <<'EOF' }
+sub abstract { return 'Convenience self-test for me while developing' }
+
+sub description {
+  return <<'EOF' }
 This command exists as a convenience method for me, the author,
 to make it easier for me to test my code without writing seperate tests
 EOF
 
 sub execute {
   my $self = shift;
-  $self->smoker();
+  return $self->smoker();
 }
 
 1;
