@@ -1,0 +1,13 @@
+#!perl
+use strict;
+use warnings;
+
+package    # ANTIINDEX
+  modulesmoke;
+
+# ABSTRACT: smoke test a module and its dependencies
+
+use Module::Smoke::App;
+
+Module::Smoke::App->run();
+
